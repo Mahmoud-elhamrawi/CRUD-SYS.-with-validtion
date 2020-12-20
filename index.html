@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <p class="aler alert-info w-75 mx-auto text-center text-capitalize p-5" id="alert-all"> plz.fill the inputs</p>
+        <div class="form-group">
+            <label for="inpName">Name :</label>
+            <input type="text"  class="form-control" placeholder="Name" id="inpName" />
+            <p class="alert alert-danger" id="alerts-name">PLZ. frist Litter is capilize</p>
+        </div>
+        <div class="form-group">
+            <label for="inpPhone">Phone :</label>
+            <input type="text" class="form-control" placeholder="Name" id="inpPhone" />
+            <p class="alert alert-danger" id="alerts-phone">PLZ. phone number</p>
+
+        </div>
+        <div class="form-group">
+            <label for="inpType">Type :</label>
+            <input type="text" class="form-control" placeholder="Name" id="inpType" />
+            <p class="alert alert-danger" id="alerts-type">PLZ. enter 'good' / 'bad'/'v.good' </p>
+
+        </div>
+        <button class="btn btn-info" id="mybtn" onclick="gatData()">ADD Friend</button>
+    </div>
+    </div>
+
+    <input class="w-50 mx-auto form-control" onkeyup="searchData(this.value)"  placeholder="search">
+    <div class="container my-3">
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Type</th>
+                <th>Delete</th>
+                <th>UpDate</th>
+            </thead>
+            <tbody id="rowData">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
